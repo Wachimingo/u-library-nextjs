@@ -26,7 +26,7 @@ const Details = ({ user }: any) => {
         .then((data) => setIsBorrowed(data))
         .catch((error) => console.log(error));
     }
-  }, [id]);
+  }, [id, user]);
 
   const borrowBook = async () => {
     try {

@@ -7,7 +7,8 @@ if (!conn) {
     user: process.env.POSTGRES_USER,
     host: process.env.POSTGRES_HOST,
     database: process.env.POSTGRES_DB,
-    password: process.env.POSTGRESS_PASS
+    password: process.env.POSTGRESS_PASS,
+    port: +process.env.POSTGRESS_PORT!
   });
 }
 

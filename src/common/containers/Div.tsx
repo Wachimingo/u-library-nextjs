@@ -1,5 +1,5 @@
 import containerBuilder from "./containerBuilder";
 
-const Div = (props) => containerBuilder("div", props, undefined);
+const Div = (props: any) => containerBuilder("div", props, undefined);
 
 export default Div;

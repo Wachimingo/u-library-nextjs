@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import styles from "./switch.module.css";
 
 export const Switch = () => {
-  const [active, setActive] = useState();
+  const [active, setActive] = useState<any>();
 
   const switchThemeHandler = () => {
-    setActive((prev) => !prev);
+    setActive((prev: any) => !prev);
   };
 
   useEffect(() => {

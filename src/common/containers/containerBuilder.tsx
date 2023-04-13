@@ -1,9 +1,10 @@
+//@ts-ignore
 import { jsx } from "react/jsx-runtime";
 import styles from "./container.module.css";
 
 const COLUMN = "column";
 
-const containerBuilder = (HtmlElement, { children, column, row, className, space, fit, onClick, role }, extendedClass) => {
+const containerBuilder = (HtmlElement: string, { children, column, row, className, space, fit, onClick, role }: any, extendedClass: string | undefined) => {
   let direction = COLUMN;
   if (column) direction = COLUMN;
   if (row) direction = "row";
