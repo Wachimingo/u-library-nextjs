@@ -8,7 +8,8 @@ if (!conn) {
     host: process.env.POSTGRES_HOST,
     database: process.env.POSTGRES_DB,
     password: process.env.POSTGRESS_PASS,
-    port: +process.env.POSTGRESS_PORT!
+    port: +process.env.POSTGRESS_PORT!,
+    ssl: true
   });
 }
 
