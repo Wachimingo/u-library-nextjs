@@ -7,7 +7,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const query = `select rentals.id, inventory.book from rentals inner join inventory on rentals.inventory = inventory.id where rentals.user=${req.query.user} and book=${req.query.book}`;
     try {
       const data = await conn.query(query);
-      res.status(200).send(data.rows);
+      res.status(200).send(data.rows.length > 0);
     } catch (error) {
       console.log(error);
       res.status(500).send("An error ocurred");

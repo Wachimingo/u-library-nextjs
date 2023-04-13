@@ -19,7 +19,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const query = `insert into books(title, published_year, author, genre, img) values('${title}', '${published_year}', '${author}', '${genre}', '${img}') returning id;`;
     try {
       const data = await conn.query(query);
-      const createInventory = `insert into inventory(book, stock) values(${data[0].id},${stock})`;
+      const createInventory = `insert into inventory(book, stock) values(${data.rows[0].id},${stock})`;
       await conn.query(createInventory);
       res.status(200).send(data.rows);
     } catch (error) {

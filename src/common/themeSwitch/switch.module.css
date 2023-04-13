@@ -1,0 +1,32 @@
+.toggle-wrapper{
+    width: 50px;
+    min-width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    border: 1px solid #666;
+    margin: auto;
+    display: flex;
+    margin-right: 2vw;
+}
+.notch-on{
+    position: relative;
+    left: 26px;
+    height: 21px;
+    width: 21px;
+    border: 1px solid #666;
+    margin-top: 1px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.1s linear;
+}
+.notch-off{
+    position: relative;
+    left: 1px;
+    height: 21px;
+    width: 21px;
+    border: 1px solid #666;
+    margin-top: 1px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.1s linear;
+}

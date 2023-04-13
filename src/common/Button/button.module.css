@@ -1,0 +1,54 @@
+.success {
+  background-color: var(--bg);
+  color: var(--font-color);
+  border: 2px solid var(--success);
+  height: 6vh;
+  width: 10vw;
+}
+.success:hover {
+  background-color: var(--success);
+  color: black;
+  border: 2px solid var(--success);
+  cursor: pointer;
+}
+
+.info {
+  background-color: var(--bg);
+  color: var(--font-color);
+  border: 2px solid var(--info);
+  height: 6vh;
+  width: 10vw;
+}
+.info:hover {
+  background-color: var(--info);
+  color: black;
+  border: 2px solid var(--info);
+  cursor: pointer;
+}
+.warning {
+  background-color: var(--bg);
+  color: var(--font-color);
+  border: 2px solid var(--warning);
+  height: 6vh;
+  width: 10vw;
+}
+.warning:hover {
+  background-color: var(--warning);
+  color: black;
+  border: 2px solid var(--warning);
+  cursor: pointer;
+}
+
+.error {
+  background-color: var(--bg);
+  color: var(--font-color);
+  border: 2px solid var(--error);
+  height: 6vh;
+  width: 10vw;
+}
+.error:hover {
+  background-color: var(--error);
+  color: black;
+  border: 2px solid var(--error);
+  cursor: pointer;
+}

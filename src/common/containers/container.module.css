@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  text-align: center;  
+  text-align: justify;
+  text-justify: inter-word;
+  box-sizing: content-box;
+  flex-wrap: wrap;
+}
+.full-width{
+  width: 100%;
+}
+.fit{
+  width: fit-content;
+}
+.around {
+  justify-content: space-around;
+}
+.between{
+  justify-content: space-between;
+}
+
+.row {
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.page {
+  position: relative;
+  top: 10vh;
+}
+
+.center {
+  position: absolute;
+  top: 35vh;
+}
