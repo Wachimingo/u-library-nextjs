@@ -5,7 +5,7 @@ import { Button, Main, Page, Section } from "~/common";
 const Details = ({ user }: any) => {
   const router = useRouter();
   const { id } = router.query;
-  const [book, setBook] = useState({ author: "", title: "", img: "default.webp", genre: "", published_year: "", inventory_id: 0, stock: 0 });
+  const [book, setBook] = useState({ author: "", title: "", img: "/default.webp", genre: "", published_year: "", inventory_id: 0, stock: 0 });
   const [isBorrowed, setIsBorrowed] = useState(false);
   useEffect(() => {
     if (id) {
@@ -67,7 +67,7 @@ const Details = ({ user }: any) => {
         <h1>{book.title}</h1>
       </Main>
       <Section id='books'>
-        <img src={`/${book.img}`} alt={book.title} loading='lazy' width={"250px"} height={"353px"} />
+        <img src={`${book.img}`} alt={book.title} loading='lazy' width={"250px"} height={"353px"} />
         <p>Published Year: {book.published_year}</p>
         <h3>In Stock: {book.stock}</h3>
       </Section>
