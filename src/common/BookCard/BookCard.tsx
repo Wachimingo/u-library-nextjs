@@ -11,7 +11,7 @@ export const BookCard = ({ book, className, children }: any) => {
   return (
     <Card onClick={openMovieDetails} className={className}>
       {children}
-      <img style={{ padding: "1vw 2vh" }} src={`/${book.img}`} alt={book.title} loading='lazy' width={"250px"} height={"353px"} />
+      <img style={{ padding: "1vw 2vh" }} src={`${book.img}`} alt={book.title} loading='lazy' width={"250px"} height={"353px"} />
     </Card>
   );
 };
