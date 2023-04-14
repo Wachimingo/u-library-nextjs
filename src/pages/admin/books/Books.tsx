@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, Input, Main, Page, Section } from "~/common";
 
 const Books = () => {
-  const [book, setBook] = useState({ author: "", title: "", img: "default.webp", genre: "", published_year: "", stock: 0 });
+  const [book, setBook] = useState({ author: "", title: "", img: "/default.webp", genre: "", published_year: "", stock: 0 });
   const submitBook = async (e: any) => {
     e.preventDefault();
     try {
