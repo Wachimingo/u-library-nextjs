@@ -6,12 +6,12 @@ import styles from "./home.module.css";
 const Home = () => {
   const [books, setBooks] = useState([
     {
-      id: 1,
-      title: "A Reminiscence of Dr. Samuel Johnson",
-      published_year: "1917",
-      author: "Howard Phillips Lovecraft",
-      genre: "Horror",
-      img: "A Reminiscence of Dr. Samuel Johnson.webp"
+      id: 0,
+      title: "",
+      published_year: "",
+      author: "",
+      genre: "",
+      img: "/default.webp"
     }
   ]);
   const [filteredBooks, setFilteredBooks] = useState([]);
@@ -104,6 +104,7 @@ const Home = () => {
           <BookCard key={book.title} book={book}>
             <div style={{ width: "80%" }}>
               <p style={{ fontSize: "0.78rem" }}>{book.title}</p>
+              <p style={{ fontSize: "0.68rem" }}>{book.genre}</p>
             </div>
           </BookCard>
         ))}
